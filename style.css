@@ -147,3 +147,49 @@ nav {
 .nav_btn {
   display: none;
 }
+
+@media (width > 768px) {
+  nav {
+    position: static;
+    padding: 2em 1em;
+    max-width: var(--max-width);
+    margin-inline: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2em;
+  }
+  .nav_header {
+    flex: 1;
+    padding: 0;
+    background-color: transparent;
+  }
+  .nav_logo a {
+    color: var(--primary-color);
+  }
+  .nav_menu_btn {
+    display: none;
+  }
+  .nav_links {
+    position: static;
+    padding: 0;
+    flex-direction: row;
+    background-color: transparent;
+    transform: none;
+  }
+  .nav_links a {
+    color: var(--text-dark);
+  }
+  .nav_links a:hover {
+    color: var(--primary-color);
+  }
+  .nav_btn {
+    display: flex;
+    flex: 1;
+  }
+  .nav_btn .btn {
+    padding: 8px 10px;
+    font-size: 1.5em;
+    border-radius: 100%;
+  }
+}
