@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
+:root {
+  --primary-color: #8b0000;
+  --primary-color-light: #fff9f9;
+  --primary-color-dark: #540000;
+  --text-dark: #18181b;
+  --text-light: #6b7280;
+  --white: #ffffff;
+  --max-width: 1200px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.section_container {
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 5em 1em;
+}
+
+.section_header {
+  margin-bottom: 1em;
+  font-size: 2.5em;
+  font-weight: 700;
+  line-height: 3em;
+  color: var(--text-dark);
+  text-align: center;
+}
+
+.section_description {
+  color: var(--text-light);
+  line-height: 1.75em;
+  text-align: center;
+}
+
+.btn {
+  padding: 0.75em 1.5em;
+  outline: none;
+  border: none;
+  white-space: nowrap;
+  font-size: 1em;
+  color: white;
+  background-color: var(--primary-color);
+  border-radius: 10px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: var(--primary-color-dark);
+}
+
+.logo a {
+  font-size: 1.5em;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+.logo a span {
+  color: var(--text-dark);
+}
+
+img {
+  display: flex;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+ul {
+  list-style: none;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", san-serif;
+}
+
+nav {
+  position: fixed;
+  isolation: isolate;
+  width: 100%;
+  z-index: 9;
+}
+
+.nav_header {
+  width: 100%;
+  padding: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: var(--primary-color);
+}
+
+.nav_logo a {
+  color: var(--white);
+}
+
+.nav_menu_btn {
+  font-size: 1.5em;
+  color: var(--white);
+  cursor: pointer;
+}
+
+.nav_links {
+  position: absolute;
+  top: 68px;
+  left: 0;
+  width: 100%;
+  padding: 2em;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2em;
+  background-color: var(--primary-color-light);
+  transition: 0.5s;
+  z-index: -1;
+  transform: translateY(-100%);
+}
+
+.nav_links.open {
+  transform: translateY(0);
+}
+
+.nav_links a {
+  font-weight: 500;
+  color: var(--primary-color);
+}
+
+.nav_links a:hover {
+  color: var(--text-dark);
+}
+
+.nav_btn {
+  display: none;
+}
