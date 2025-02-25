@@ -36,3 +36,20 @@ ScrollReveal().reveal(".header_content .header_btn", {
   ...scrollRevealOption,
   delay: 1500,
 });
+
+ScrollReveal().reveal(".explore_image img", {
+  ...scrollRevealOption,
+  origin: "left",
+});
+ScrollReveal().reveal(".explore_content .section_header", {
+  ...scrollRevealOption,
+  delay: 500,
+});
+ScrollReveal().reveal(".explore_content .section_description", {
+  ...scrollRevealOption,
+  delay: 1000,
+});
+ScrollReveal().reveal(".explore_content .explore_btn", {
+  ...scrollRevealOption,
+  delay: 1500,
+});
