@@ -340,6 +340,83 @@ nav {
   transform: translateX(10px);
 }
 
+.chef {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+}
+
+.chef_bg {
+  position: absolute;
+  z-index: -1;
+  max-width: 275px;
+  left: -4rem;
+  bottom: -2rem;
+}
+
+.chef_container {
+  padding-bottom: 10rem;
+  display: grid;
+  gap: 2rem;
+}
+
+.chef_content .section_header {
+  margin-bottom: 1rem;
+}
+
+.chef_image {
+  position: relative;
+  isolation: isolate;
+}
+
+.chef_image img {
+  max-width: 500px;
+  border-radius: 100%;
+  margin-inline: auto;
+}
+
+.chef_image::after {
+  position: absolute;
+  content: " ";
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 100%;
+  width: 100%;
+  max-width: 500%;
+  background-color: var(--primary-color);
+  border-radius: 100%;
+  z-index: -1;
+}
+
+.chef_list {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.chef_list li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-weight: 500;
+  color: var(--text-dark);
+}
+
+.chef_list li span {
+  font-size: 1.5rem;
+}
+
+.chef_list li:nth-child(1) span {
+  color: #62b15c;
+}
+.chef_list li:nth-child(2) span {
+  color: #ff3e67;
+}
+.chef_list li:nth-child(3) span {
+  color: #185adb;
+}
+
 @media screen and (width > 540px) {
   .special_grid {
     grid-template-columns: repeat(2, 1fr);
@@ -426,6 +503,22 @@ nav {
 
   .banner_container {
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  .chef_bg {
+    max-width: 300px;
+  }
+  .chef_container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .chef_image {
+    grid-area: 1/2/2/3;
+  }
+  .chef_content :is(.section_header, .section_description) {
+    text-align: left;
+  }
+  .chef_list li {
+    justify-content: flex-start;
   }
 }
 
