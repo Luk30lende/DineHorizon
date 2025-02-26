@@ -20,6 +20,7 @@ const scrollRevealOption = {
   duration: 1000,
 };
 
+// Header scroll animation
 ScrollReveal().reveal(".header_image img", {
   ...scrollRevealOption,
   origin: "right",
@@ -37,6 +38,7 @@ ScrollReveal().reveal(".header_content .header_btn", {
   delay: 1500,
 });
 
+// Explore scroll animation
 ScrollReveal().reveal(".explore_image img", {
   ...scrollRevealOption,
   origin: "left",
@@ -52,4 +54,10 @@ ScrollReveal().reveal(".explore_content .section_description", {
 ScrollReveal().reveal(".explore_content .explore_btn", {
   ...scrollRevealOption,
   delay: 1500,
+});
+
+//Banner scroll animation
+ScrollReveal().reveal(".banner_card", {
+  ...scrollRevealOption,
+  interval: 500,
 });

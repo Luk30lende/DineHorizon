@@ -270,8 +270,82 @@ nav {
   text-align: center;
 }
 
+.banner_container {
+  display: grid;
+  gap: 1rem;
+}
+
+.banner_card {
+  padding: 2rem;
+  box-sizing: 5px 5px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 3rem;
+  transition: 0.3s;
+}
+
+.banner_card:hover {
+  box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+.banner_card .banner_icon {
+  display: inline-block;
+  margin-bottom: 1rem;
+  padding: 5px 11px;
+  font-size: 2rem;
+  color: var(--white);
+  border-radius: 1rem;
+}
+
+.banner_card:nth-child(1) .banner_icon {
+  background-color: #62b15c;
+  box-shadow: 5px 5px 30px #62b15cd0;
+}
+
+.banner_card:nth-child(2) .banner_icon {
+  background-color: #ff3e67;
+  box-shadow: 5px 5px 30px #ff3e67d0;
+}
+
+.banner_card:nth-child(3) .banner_icon {
+  background-color: #185adb;
+  box-shadow: 5px 5px 30px #185adbd0;
+}
+
+.banner_card h4 {
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.banner_card p {
+  margin-bottom: 1rem;
+  color: var(--text-light);
+  line-height: 1.75rem;
+}
+
+.banner_card a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 500;
+  color: var(--primary-color);
+}
+
+.banner_card a span {
+  font-size: 1.25rem;
+  transition: 0.3s;
+}
+
+.banner_card a:hover {
+  transform: translateX(10px);
+}
+
 @media screen and (width > 540px) {
   .special_grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .banner_container {
     grid-template-columns: repeat(2, 1fr);
   }
 }
@@ -349,6 +423,10 @@ nav {
   .explore_btn {
     text-align: left;
   }
+
+  .banner_container {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 @media screen and (width > 1024px) {
@@ -358,5 +436,9 @@ nav {
   .special_card {
     padding: 2rem;
     border-radius: 3rem;
+  }
+
+  .banner_container {
+    gap: 2rem;
   }
 }
