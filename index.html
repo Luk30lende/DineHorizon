@@ -8,6 +8,10 @@
       href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -222,7 +226,65 @@
       </div>
     </section>
 
+    <!-- Client Section -->
+    <section class="section_container client_container" id="client">
+      <h2 class="section_header">What Our Customers Are Saying</h2>
+      <p class="section_description">
+        Hear from our valued patrons and explore their firsthand experiences.
+        Their reviews reflect our dedication to quality, exceptional service,
+        and customer satisfaction.
+      </p>
+      <div class="client_swiper">
+        <!-- Slider main container -->
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div class="client_card">
+                <p>
+                  DineHorizon's culinary expertise never disappoints! Each dish
+                  is a masterpiece, packed with vibrant flavors and fresh
+                  ingredients.
+                </p>
+                <img src="images/client-1.jpg" alt="client" />
+                <h4>David Lee</h4>
+                <h5>Business Executive</h5>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="client_card">
+                <p>
+                  DineHorizon is my go-to for quick, delicious meals! Their
+                  efficient service and mouthwatering dishes always exceed
+                  expectations.
+                </p>
+                <img src="images/client-2.jpg" alt="client" />
+                <h4>Emily Johnson</h4>
+                <h5>Food Blogger</h5>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="client_card">
+                <p>
+                  DineHorizon is my top choice for catering! Their attention to
+                  detail and outstanding customer service ensure every event is
+                  a success.
+                </p>
+                <img src="images/client-2.jpg" alt="client" />
+                <h4>Michael Thompson</h4>
+                <h5>Event Planner</h5>
+              </div>
+            </div>
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+
     <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
